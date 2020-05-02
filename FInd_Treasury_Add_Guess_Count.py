@@ -30,7 +30,7 @@ def parraot(event):
           format(event.x, event.y, abs(event.x - x_coord), abs(event.y - y_coord)))
     if abs(event.x - x_coord) < 20 and abs(event.y - y_coord) < 20:
         print("Hurrry You found the Ttreasareeeeeee..Yar")
-        Welcome_label.config(text="You found the treasary in{} clicks".format(text=counter))
+        Welcome_label.config(text="You found the treasary in{} clicks".format(counter))
 
 frame = Frame(window,bg="orange",height=200,width=200)
 frame.bind("<Button-1>",guess_treasure)
